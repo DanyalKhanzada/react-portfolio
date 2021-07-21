@@ -26,3 +26,32 @@ function Contact() {
             setFormState({ ...formState, [e.target.name]: e.target.value })
         }
     };
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+    }
+    return (
+        <section className='flex column'>
+            <p className='flex align-center'>
+                <a
+                    className='icon-link'
+                    href='mailto:danyalkhanzada89@gmail.com'>
+                    <span class="material-icons">
+                        email
+                    </span> </a>
+                            danyalkhanzada89@gmail.com
+                    </p>
+            <p className='flex align-center'>
+                <a
+                    className='icon-link'
+                    href='tel:647-838-3878'>
+                    <span class="material-icons">
+                        phone
+                    </span> </a>
+                            (647) 838 3878
+                    </p>
+        </section>
+    )
+};
+
+export default Contact;
