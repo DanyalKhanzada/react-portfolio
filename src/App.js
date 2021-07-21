@@ -22,7 +22,7 @@ function App() {
   return (
     <main className='flex column align-center'>
       <img 
-      // src={require('./assets/imgs/-logo-animate.png').default} 
+      src={require('./assets/imgs/logo.gif').default} 
       className='logo'
       alt='Danyal Khanzada'/>
       <Nav 
