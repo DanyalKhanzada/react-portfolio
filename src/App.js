@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Nav from './components/Nav';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
+  const navLinks = ['About', 'Work', 'Contact' ];
+  const [ currentPage, setCurrentPage ] = useState(navLinks[0]);
+
+  const renderPage = () => {
+    switch (currentPage) {
+        case 'Work':
+          return <Portfolio />;
+        case 'Contact':
+          return <Contact />;
+        default:
+            return <About />;
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <main className='flex column align-center'>
+      <img 
+      // src={require('./assets/imgs/-logo-animate.png').default} 
+      className='logo'
+      alt='Danyal Khanzada'/>
+      <Nav 
+      navLinks={navLinks} 
+      currentPage={currentPage} 
+      setCurrentPage={setCurrentPage}
+      />
+      {renderPage()}
+      <footer className='flex justify-center align-center'>
+        <a href='https://github.com/DanyalKhanzada' className='footer-link' target='_blank' rel='noreferrer'>
+          github
         </a>
-      </header>
-    </div>
+        <a href='https://www.linkedin.com/in/danyal-khanzada' className='footer-link' target='_blank' rel='noreferrer'>
+          linkedin
+        </a>
+      </footer>
+    </main>
   );
-}
+};
 
 export default App;
