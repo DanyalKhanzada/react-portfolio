@@ -23,34 +23,34 @@ function Portfolio() {
             name: 'Team Profile Generator',
             altRepo: 'https://github.com/DanyalKhanzada/team-profile-generator'
         },
-        {
-            name: 'Note Taker',
-        },
-        {
-            name: 'ReadMe Generator',
-            notDeployed: true
-        },
-        {
-            name: 'ECommerce Back End',
-            altURL: 'https://github.com/DanyalKhanzada/E-commerce-back-end',
-        },
+        // {
+        //     name: 'Note Taker',
+        // },
+        // {
+        //     name: 'ReadMe Generator',
+        //     notDeployed: true
+        // },
+        // {
+        //     name: 'ECommerce Back End',
+        //     altURL: 'https://github.com/DanyalKhanzada/E-commerce-back-end',
+        // },
         
-        {
-            name: 'Weather Dashboard'
-        },
-        {
-            name: 'Work Day Schedule'
-        },
-        {
-            name: 'Taskmaster Pro'
-        },
-        {
-            name: 'Taskinator'
-        },
+        // {
+        //     name: 'Weather Dashboard'
+        // },
+        // {
+        //     name: 'Work Day Schedule'
+        // },
+        // {
+        //     name: 'Taskmaster Pro'
+        // },
+        // {
+        //     name: 'Taskinator'
+        // },
         
-        {
-            name: 'Code Quiz'
-        }
+        // {
+        //     name: 'Code Quiz'
+        // }
     ])
 
     return (

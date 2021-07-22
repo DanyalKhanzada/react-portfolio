@@ -4,9 +4,9 @@
 }
 
 :root {
-  --main: #f8f8ff;
-  --text: #000000;
-  --accent1: #000000;
+  --main: #eae7dc;
+  --text: #e85a4f;
+  --accent1: #8e8d8a;
   --accent2: #4a4a4c;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
 }
 
